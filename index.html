@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Bharat Roadlines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="semi.png">
+</head>
+
+<body>
+
+    <nav class="navrbar">
+        <ul class="sidebar">
+            <li onclick=hidebar><a href="">Cancle <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <!-- <li><a href="index.html" rel="noopener noreferrer"><img src="logo1.png" alt="logo"
+                        class="iconlogo">Home</a></li> -->
+            <li class="list background"><a href="index.html" rel="noopener noreferrer" class="active">Home</a></li>
+            <li class="list background"><a href="adminlogin.html" rel="noopener noreferrer">Admin Login</a></li>
+            <li class="list background"><a href="http://" target="_blank" rel="noopener noreferrer">Services</a></li>
+            <li class="list background"><a href="http://" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+        </ul>
+
+
+        <ul class="container">
+            <li><a href="index.html" rel="noopener noreferrer"><img src="logo1.png" alt="logo" class="iconlogo"></a>
+            </li>
+            <li class="list background hidenav"><a href="index.html" rel="noopener noreferrer" class="active">Home</a>
+            </li>
+            <li class="list background hidenav"><a href="adminlogin.html" rel="noopener noreferrer">Admin
+                    Login</a></li>
+            <li class="list background hidenav"><a href="http://" rel="noopener noreferrer">Services</a></li>
+            <li class="list background hidenav"><a href="http://" rel="noopener noreferrer">Contact Us</a></li>
+            <li onclick=showSidebar() class="showmenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="maindiv">
+        <div class="about">
+            <span class="bname">JAY BHARAT ROADLINES</span>
+            <!-- <span class="pname">VYAS BABA</span>  -->
+            <div class="waviy">
+                <span style="--i:1">V</span>
+                <span style="--i:2">A</span>
+                <span style="--i:3">Y</span>
+                <span style="--i:4">S</span>
+                <span style="--i:5"></span>
+                <span style="--i:6">B</span>
+                <span style="--i:7">A</span>
+                <span style="--i:8">B</span>
+                <span style="--i:9">A</span>
+            </div>
+        </div>
+        <div class="content">
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt tempora corrupti doloremque rem
+                accusantium voluptas mollitia quia minus hic, ab cumque voluptates reiciendis deleniti neque impedit
+                distinctio animi, quas officiis, dicta eaque sunt! Ab excepturi, sit tempora vitae natus minus
+                delectus ducimus nobis ad, architecto accusantium facere iusto amet sunt laborum soluta similique
+                voluptatibus. Debitis perferendis officiis magni quis tempora obcaecati quisquam atque aliquam hic
+                praesentium modi, adipisci, voluptate excepturi.</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+</html>

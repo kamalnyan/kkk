@@ -1,0 +1,129 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(paper.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+/* background-position:center; */
+min-height: 100vh;
+}
+nav{
+   margin-top: 20px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    /* background-color: #1e3178; */
+    color: gray;
+    transition: 0.5s;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter:blur(10px);
+    }
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    color: white;
+}
+.showmenu{
+    display: none;
+}
+@media(max-width:700px)
+{
+    .hidenav{
+        display: none;
+    }
+    .showmenu{
+        display: block;
+        background-color: darkcyan;
+        border-radius: 100px;
+    }
+}
+.iconlogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+}
+.container-login{
+    background-color: rgba(224, 216, 216, 0.2);
+    display:inline-block;
+    padding: 3%;
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.active{
+    color: gray;
+}
+.container-login div{
+    padding: 7%;
+}
+#head{
+    padding: 3%;
+    color: bisque;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:0 3px black;
+}
+#email {
+    width: 300px;
+    height: 40px;
+    text-indent: 20px;
+    margin-right: 40px;
+}
+#password{
+    width: 300px;
+    height: 40px;
+    text-indent: 20px;
+}
+.login-btn{
+    text-decoration: none;
+    color: white;
+}
+#btn{
+    width:100px;
+    background-color:darkcyan;
+    padding: 4%;
+    border-radius: 100px;
+}
